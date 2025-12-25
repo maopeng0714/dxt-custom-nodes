@@ -1,0 +1,38 @@
+[project]
+name = "dxt-custom-nodes"
+description = "多信通的自定义ComfyUI节点库，用于支持AI内容生成平台的业务功能需求。"
+version = "1.0.0"
+license = {file = "LICENSE"}
+requires-python = ">=3.8" 
+# classifiers = [
+#     # For OS-independent nodes (works on all operating systems)
+#     "Operating System :: OS Independent",
+#
+#     # OR for OS-specific nodes, specify the supported systems:
+#     "Operating System :: Microsoft :: Windows",  # Windows specific
+#     "Operating System :: POSIX :: Linux",  # Linux specific
+#     "Operating System :: MacOS",  # macOS specific
+#
+#     # GPU Accelerator support. Pick the ones that are supported by your extension.
+#     "Environment :: GPU :: NVIDIA CUDA",    # NVIDIA CUDA support
+#     "Environment :: GPU :: AMD ROCm",       # AMD ROCm support
+#     "Environment :: GPU :: Intel Arc",      # Intel Arc support
+#     "Environment :: NPU :: Huawei Ascend",  # Huawei Ascend support
+#     "Environment :: GPU :: Apple Metal",    # Apple Metal support
+# ]
+
+dependencies = ["oss2>=2.19.1", "Pillow>=8.0.0", "torch>=1.0.0", "numpy>=1.20.0"]
+
+[project.urls]
+Repository = ""
+#  Used by Comfy Registry https://registry.comfy.org
+Documentation = ""
+"Bug Tracker" = ""
+
+[tool.comfy]
+PublisherId = "dxt"
+DisplayName = "多信通自定义节点"
+Icon = ""
+includes = [] 
+# "requires-comfyui" = ">=1.0.0"  # ComfyUI version compatibility
+
