@@ -24,10 +24,10 @@ requires-python = ">=3.8"
 dependencies = ["oss2>=2.19.1", "Pillow>=8.0.0", "torch>=1.0.0", "numpy>=1.20.0"]
 
 [project.urls]
-Repository = ""
+Repository = "https://github.com/maopeng0714/dxt-custom-nodes"
 #  Used by Comfy Registry https://registry.comfy.org
-Documentation = ""
-"Bug Tracker" = ""
+Documentation = "https://github.com/maopeng0714/dxt-custom-nodes/README.md"
+"Bug Tracker" = "https://github.com/maopeng0714/dxt-custom-nodes"
 
 [tool.comfy]
 PublisherId = "dxt"
