@@ -80,7 +80,7 @@ class AliyunOSSImageUploader:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("urls",)
     FUNCTION = "upload_image"
-    CATEGORY = "OSS Upload"
+    CATEGORY = "多信通自定义节点"
     
     def generate_random_filename(self, extension: str = "png") -> str:
         """Generate random filename with timestamp and random string"""
@@ -220,7 +220,7 @@ class AliyunOSSVideoUploader:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("url",)
     FUNCTION = "upload_video"
-    CATEGORY = "OSS Upload"
+    CATEGORY = "多信通自定义节点"
     
     def generate_random_filename(self, extension: str = "mp4") -> str:
         """Generate random filename with timestamp and random string"""
@@ -344,7 +344,7 @@ class  AliyunOSSAudioUploader:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("url",)
     FUNCTION = "upload_audio"
-    CATEGORY = "OSS Upload"
+    CATEGORY = "多信通自定义节点"
     
     def generate_random_filename(self, extension: str = "wav") -> str:
         """Generate random filename with timestamp and random string"""
