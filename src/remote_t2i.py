@@ -32,13 +32,6 @@ class RemoteT2iGenerator:
                     "multiline": True,
                     "placeholder": "Prompt for image generation"
                 }),
-                "n": ("INT", {
-                    "default": 1,
-                    "min": 1,
-                    "max": 8,
-                    "step": 1,
-                    "forceInput": True,  # Hide this parameter from UI
-                }),
                 "size": ("STRING", {
                     "default": "1024x1024",
                     "multiline": False,
@@ -56,7 +49,7 @@ class RemoteT2iGenerator:
                     "multiline": False,
                     "placeholder": "API endpoint URL"
                 })
-            }
+            },
         }
     
     RETURN_TYPES = ("IMAGE", "STRING")
@@ -64,7 +57,7 @@ class RemoteT2iGenerator:
     FUNCTION = "generate_images"
     CATEGORY = "多信通自定义节点"
     
-    def generate_images(self, token, model, prompt, n, size, batch_size, api_url):
+    def generate_images(self, token, model, prompt, size, batch_size, api_url):
         """Generate images using remote Flux1 model with concurrent requests"""
         try:
             # Prepare request headers
