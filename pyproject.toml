@@ -21,7 +21,7 @@ requires-python = ">=3.8"
 #     "Environment :: GPU :: Apple Metal",    # Apple Metal support
 # ]
 
-dependencies = ["oss2>=2.19.1", "Pillow>=8.0.0", "torch>=1.0.0", "numpy>=1.20.0"]
+dependencies = ["oss2>=2.19.1", "Pillow>=8.0.0", "torch>=1.0.0", "numpy>=1.20.0", "requests>=2.31.0"]
 
 [project.urls]
 Repository = "https://github.com/maopeng0714/dxt-custom-nodes"
